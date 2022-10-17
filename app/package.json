@@ -1,0 +1,52 @@
+{
+    "name": "backendnode",
+    "version": "1.0.0",
+    "description": "administracion de tienda",
+    "main": "index.js",
+    "scripts": {
+        "createtable": "node setupdb.js",
+        "dev": "nodemon run index.js",
+        "postinstall": "npm run build",
+        "start": "node index.js",
+        "build": "NODE_ENV=production",
+        "lint": "standard"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:S2rg45/backendNode.git"
+    },
+    "author": "Sergio Moreno",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://git@github.com:S2rg45/backendNode.git/issues"
+    },
+    "homepage": "https://git@github.com:S2rg45/backendNode.git#readme",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "bcrypt": "^5.0.1",
+        "body-parser": "^1.19.0",
+        "dotenv": "^10.0.0",
+        "env-cmd": "^10.1.0",
+        "express": "^4.17.1",
+        "form-data": "^4.0.0",
+        "inquirer": "^8.2.4",
+        "jsonwebtoken": "^8.5.1",
+        "moment": "^2.29.1",
+        "morgan": "^1.10.0",
+        "nodemailer": "^6.6.3",
+        "nodemon": "^2.0.7",
+        "passport": "^0.6.0",
+        "pg": "^8.8.0",
+        "pg-hstore": "^2.3.4",
+        "pug": "^3.0.2",
+        "sequelize": "^6.25.1",
+        "sequelize-cli": "^6.5.1",
+        "swagger": "^0.0.1",
+        "uuid": "^9.0.0",
+        "xlsx": "^0.17.0"
+    },
+    "devDependencies": {
+        "clean-css-cli": "^5.3.0",
+        "standard": "^17.0.0"
+    }
+}
